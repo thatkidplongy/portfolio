@@ -1,101 +1,54 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="">
+      <div
+        id="banner"
+        className="relative h-full w-full max-w-defaultMax mx-auto px-6 py-12 bg-about"
+      >
+        <div id="about-me" className="">
+          <h1 className="flex flex-col w-full">About me</h1>
+          <p>
+            👋 Hello! I'm Engr. Florante G. Clavano Jr., a licensed electronics
+            engineer who transitioned into the dynamic world of software
+            engineering for three years now. With a strong foundation in
+            electronics and a passion for technology, I've harnessed my skills
+            to become a versatile software engineer.
+          </p>
+          <p>
+            💻 My toolkit includes a diverse set of technologies, such as
+            Next.js, React.js, TypeScript, Tailwind CSS, Python Flask, Node.js,
+            Express.js, MongoDB, and PostgreSQL. I thrive in developing web
+            applications that provide intuitive and efficient solutions to
+            real-world problems. 🔧 Whether it's designing user-friendly
+            interfaces, optimizing back-end systems, or delving into data
+            analysis, I enjoy the challenges that software engineering offers.
+            My experience spans various domains, from front-end development with
+            React to crafting robust RESTful APIs with Node.js and Express, and
+            managing data with MongoDB and PostgreSQL.{" "}
+          </p>
+          <p>
+            🌟 I'm passionate about keeping up with industry trends, staying
+            curious, and continuously learning to ensure I provide the best
+            solutions. Collaboration, innovation, and a dedication to quality
+            drive me in my work.{" "}
+          </p>
+          <p>
+            🌐 If you're looking to collaborate or discuss exciting
+            opportunities in the world of software engineering, feel free to
+            connect with me. Let's explore the possibilities together!
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div id="overlap" className=" bg-gray-500 w-1/2 absolute z-10p-4">
+          <p className="text-center">Overlapping Div</p>
+        </div>
+      </div>
+
+      <div
+        id="projects"
+        className="relative h-full w-full max-w-defaultMax mx-auto px-6 py-12 bg-projects"
+      >
+        <h1 className="">Projects</h1>
+      </div>
     </div>
   );
 }
