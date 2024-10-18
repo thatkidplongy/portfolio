@@ -3,9 +3,9 @@ export default function Home() {
     <div className="">
       <div
         id="banner"
-        className="relative h-full w-full max-w-defaultMax mx-auto px-6 py-12 bg-about"
+        className="relative h-full w-full max-w-defaultMax px-6 py-12 bg-about"
       >
-        <div id="about-me" className="">
+        <div id="about-me" className="w-[880px] mx-auto">
           <h1 className="flex flex-col w-full">About me</h1>
           <p>
             👋 Hello! I'm Engr. Florante G. Clavano Jr., a licensed electronics
@@ -38,7 +38,10 @@ export default function Home() {
             connect with me. Let's explore the possibilities together!
           </p>
         </div>
-        <div id="overlap" className=" bg-gray-500 w-1/2 absolute z-10p-4">
+        <div
+          id="overlap"
+          className="bg-gray-500 w-[880px] absolute z-10 p-4 -bottom-6 left-1/2 transform -translate-x-1/2"
+        >
           <p className="text-center">Overlapping Div</p>
         </div>
       </div>
@@ -47,7 +50,9 @@ export default function Home() {
         id="projects"
         className="relative h-full w-full max-w-defaultMax mx-auto px-6 py-12 bg-projects"
       >
-        <h1 className="">Projects</h1>
+        <div id="about-me" className="w-[880px] mx-auto">
+          <h1 className="">Projects</h1>
+        </div>
       </div>
     </div>
   );

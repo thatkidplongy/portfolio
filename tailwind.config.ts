@@ -15,6 +15,7 @@ const config: Config = {
       },
       width: {
         defaultMax: "1440px",
+        contentWidth: "880px",
       },
     },
   },
