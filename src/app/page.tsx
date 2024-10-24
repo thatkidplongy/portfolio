@@ -1,7 +1,31 @@
 export default function Home() {
   return (
-    <div className="">
-      <div
+    <div className="relative w-full h-full flex bg-custom-bg bg-cover banner">
+      <nav className="nav-bar fixed w-1/2 top-0 left-1/2 transform mt-10 -translate-x-1/2 bg-white bg-opacity-10 text-white py-2 px-4 rounded-lg shadow-lg z-50 backdrop-blur-10 border border-white border-opacity-20">
+        <ul className="flex space-x-4 justify-between p-4">
+          <li>
+            <a href="#home" className="hover:text-gray-300">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-gray-300">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="hover:text-gray-300">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-gray-300">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      {/* <div
         id="banner"
         className="relative h-full w-full max-w-defaultMax px-6 py-12 bg-about"
       >
@@ -38,22 +62,7 @@ export default function Home() {
             connect with me. Let&rsquo;s explore the possibilities together!
           </p>
         </div>
-        <div
-          id="overlap"
-          className="bg-gray-500 w-[880px] absolute z-10 p-4 -bottom-6 left-1/2 transform -translate-x-1/2"
-        >
-          <p className="text-center">Overlapping Div</p>
-        </div>
-      </div>
-
-      <div
-        id="projects"
-        className="relative h-full w-full max-w-defaultMax mx-auto px-6 py-12 bg-projects"
-      >
-        <div id="about-me" className="w-[880px] mx-auto">
-          <h1 className="">Projects</h1>
-        </div>
-      </div>
+      </div> */}
     </div>
   );
 }

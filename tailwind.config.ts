@@ -17,8 +17,20 @@ const config: Config = {
         defaultMax: "1440px",
         contentWidth: "880px",
       },
+      backdropBlur: {
+        "10": "10px",
+      },
+      backgroundImage: {
+        "custom-bg": "url('/images/background.jpg')",
+      },
     },
   },
+  variants: {
+    extend: {
+      backdropBlur: ["hover", "focus"],
+    },
+  },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
