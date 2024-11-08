@@ -16,14 +16,67 @@ body {
 }
 
 .nav-bar {
-  border: 2px solid white;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  transition: transform 0.3s ease-in-out;
   backdrop-filter: blur(10px);
+  width: 50%;
+  animation: slideUp linear;
+  animation-timeline: view();
+}
+
+@keyframes slideUp {
+  from {
+    top: 40rem;
+    border: none;
+  }
+  to {
+    top: 0px;
+    border: 2px solid white;
+  }
 }
 
 .banner {
-  background: url("../../public/bg-pixels.jpg");
+  background: url("../../public/bg-pixels-2.jpg");
+  object-fit: contain;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.nav-list {
+  padding: 10px 20px;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  transform: scale(1, 1);
+}
+
+.nav-lis:before {
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(0px);
+  transition: 400ms;
+}
+
+&:hover {
+}
+
+.nav-list:hover {
+  transform: translateY(-20px);
+  &:before {
+    transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
+  }
+  /* background-color: aqua;
+  color: black;
+  box-shadow:
+    0 0 10px aqua,
+    0 0 8px aqua inset; */
 }
